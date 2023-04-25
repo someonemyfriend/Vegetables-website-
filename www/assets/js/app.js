@@ -8,3 +8,14 @@ let swiper = new Swiper(".home", {
       prevEl: ".swiper-button-prev"
     }
   });
+
+  let menu = document.querySelector('#burger');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () => {
+    navbar.classList.toggle('active');
+  }
+
+  window.onscroll = () => {
+    navbar.classList.remove('active');
+  }
